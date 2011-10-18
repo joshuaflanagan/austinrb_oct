@@ -16,5 +16,16 @@ describe "RomanNumeral" do
     it "should convert 4 to IV" do
       4.to_roman.should == "IV"
     end
+    
+    it "should convert 999 to CMXCIX" do
+      999.to_roman.should == "CMXCIX"
+    end
+
+    it "should convert 1954 to MCMLIV" do
+      1954.to_roman.should == "MCMLIV"
+    end
+  end
+  describe "roman numerals to integers" do
+    it { "I".to_roman.should == 1 }
   end
 end
